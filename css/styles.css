@@ -7,6 +7,23 @@ font-family: 'Roboto', sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(71, 194, 243) transparent;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+	background: rgb(71, 194, 243);
+	border-radius: 20px;
+	border: transparent;
 }
 body {
   height: 100vh;
@@ -15,6 +32,7 @@ body {
   background-color: black;
   text-align: center;
   padding: 0px 40px;
+  font-family: "Kaushan Script", cursive;
 }
 
 .container {
@@ -27,7 +45,7 @@ body {
   border-bottom: 2px solid white;
   padding-bottom: 10px;
 }
-.navbar h1 {
+h1 {
   margin: 10px 0px;
   font-family: "Kaushan Script", cursive;
 }
@@ -50,14 +68,13 @@ ul li a {
 .home {
   display: flex;
   flex-direction: column;
-  
 }
 .home .introduction {
   color: #fff;
 }
-.home .introduction p{
+.home .introduction p {
   border-bottom: 2px solid #fff;
-  padding-bottom:5px ;
+  padding-bottom: 5px;
   margin: 0px 40px;
 }
 .last-paragraph {
@@ -73,35 +90,53 @@ ul li a {
   height: 100%;
   object-fit: contain;
 }
-hr{
+hr {
   padding: 1px;
   border: none;
   background-color: #fff;
   margin: auto 0px;
   height: 90%;
 }
-.about{
-
+.about {
   display: flex;
 }
-.about .image{
-
-width: 50%;
+.about .image {
+  width: 50%;
 }
-.about .image img{
-
+.about .image img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
-.about .main{
-display: flex;
-justify-content: center;
-align-items: center;
+.about .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   width: 50%;
 }
 
+.adoption {
+  color: #fff;
+  overflow: hidden;
+}
+.adoption-card-container {
+  max-height: 500px;
+background-color: black;
+overflow: auto;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.adoption-card {
+  height: 200px;
+  width: 30%;
+  background-color: aqua;
+  margin: 10px;
+}
 /* .about {
   background-image: url("../images/dog7.jpg");
   background-attachment: fixed;
@@ -122,8 +157,6 @@ align-items: center;
   padding-top: 10px;
   object-fit: contain;
 } */
-
-
 
 /* }
 body {
