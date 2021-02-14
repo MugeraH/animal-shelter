@@ -31,13 +31,26 @@ body {
   margin: 10px 0px;
   font-family: "Kaushan Script", cursive;
 }
+ul li {
+  display: inline;
+  margin: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200px;
+  text-transform: uppercase;
+  font-family: "Kaushan Script", cursive;
+}
 .section {
-  height: 450px;
-  margin: 10px 100px;
+  height: 500px;
+  margin: 10px 100px 50px 100px;
 }
 .home {
   display: flex;
   flex-direction: column;
+  
 }
 .home .introduction {
   color: #fff;
@@ -51,7 +64,7 @@ body {
   margin: 0px 80px;
 }
 .home .introduction-image {
-  height: 80%;
+  height: 60%;
   display: flex;
 }
 .introduction-image img {
@@ -67,18 +80,26 @@ hr{
   margin: auto 0px;
   height: 90%;
 }
-.footer {
-  position: sticky;
-  font-size: 13px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  padding: 7px;
-}
+.about{
 
-.copyright a {
-  text-decoration: none;
-  color: rgb(28, 162, 224);
+  display: flex;
+}
+.about .image{
+
+width: 50%;
+}
+.about .image img{
+
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.about .main{
+display: flex;
+justify-content: center;
+align-items: center;
+  color: #fff;
+  width: 50%;
 }
 
 /* .about {
@@ -102,18 +123,7 @@ hr{
   object-fit: contain;
 } */
 
-ul li {
-  display: inline;
-  margin: 20px;
-}
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 200px;
-  text-transform: uppercase;
-  font-family: "Kaushan Script", cursive;
-}
+
 
 /* }
 body {
@@ -137,3 +147,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
 } */
+.footer {
+  position: sticky;
+  font-size: 13px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  padding: 7px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgb(28, 162, 224);
+}
