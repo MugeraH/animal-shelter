@@ -14,7 +14,6 @@ email :mugerahughes@gmail.com
 * CSS
 
 
-
-
+### [MIT LICENSE](https://github.com/MugeraH/animal-shelter/blob/main/license)
 
 
